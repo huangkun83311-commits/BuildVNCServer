@@ -7,7 +7,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
-          brew install autoconf automake libtool xcpretty
+          brew install autoconf automake libtool
+          gem install xcpretty
       - name: Build
         run: |
           chmod +x build.sh
