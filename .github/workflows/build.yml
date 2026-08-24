@@ -1,0 +1,16 @@
+name: Build libvncserver
+on: [push]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          chmod +x build.sh
+          ./build.sh
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: libvncserver-ios
+          path: dist/
