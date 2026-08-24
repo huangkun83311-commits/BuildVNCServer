@@ -24,7 +24,7 @@ if [ -z "$SIMULATOR" ]; then
 fi
 
 rm -rf libvncserver
-git clone --depth=1 https://github.com/LibVNC/libvncserver.git # 041ea576c3dddd6c7169935aaf8889673024fbfc
+git clone --depth=1 https://github.com/huangkun83311-commits/libvncserver.git
 WORKING_DIR="$(dirname "$0")/libvncserver"
 
 if [ ! -d "$WORKING_DIR" ]; then
