@@ -33,7 +33,6 @@ fi
 
 cd "$WORKING_DIR"
 WORKING_DIR=$(pwd)
-patch -s -p0 < ../libvncserver.patch
 
 git clean -fdx
 
